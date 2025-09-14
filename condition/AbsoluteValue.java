@@ -1,4 +1,4 @@
-package conditions;
+package condition;
 import java.util.Scanner;
 
 public class AbsoluteValue {
@@ -13,10 +13,11 @@ public class AbsoluteValue {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the number: ");
-        int num = sc.nextInt();
-        sc.close();
+        int num;
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter the number: ");
+            num = sc.nextInt();
+        }
         AbsoluteValue value = new AbsoluteValue();
 
         System.out.println("Absolute value: "+value.absolute(num));

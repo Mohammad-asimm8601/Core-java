@@ -1,4 +1,4 @@
-package conditions;
+package condition;
 import java.util.Scanner;
 
 public class EvenOdd {
@@ -12,12 +12,12 @@ public class EvenOdd {
 
     }
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the number: ");
-        int n = sc.nextInt();
-        EvenOdd checker = new EvenOdd();
-        System.out.println(n+" is "+checker.checkEvenOdd(n));
-        sc.close();
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter the number: ");
+            int n = sc.nextInt();
+            EvenOdd checker = new EvenOdd();
+            System.out.println(n+" is "+checker.checkEvenOdd(n));
+        }
         
     }
 }

@@ -16,40 +16,49 @@ class Plane{
 }
 
 class PassengerPlane extends Plane{
+    @Override
     public void takeOff(){
         System.out.println("Passenger-Plane is takeOff..");
     }
 
+    @Override
     public void fly(){
         System.out.println("Passenger-Plane is fly");
     }
 
+    @Override
     public void land(){
         System.out.println("Passenger-Plane is land");
     }
 }
 class CargoPlane extends Plane{
+    @Override
     public void takeOff(){
         System.out.println("Cargo-Plane is takeOff..");
     }
 
+    @Override
     public void fly(){
         System.out.println("Cargo-Plane is fly");
     }
 
+    @Override
     public void land(){
         System.out.println("Cargo-Plane is land");
     }
 }
 class FighterPlane extends Plane{
+    @Override
     public void takeOff(){
         System.out.println("Fighter-Plane is takeOff..");
     }
 
+    @Override
     public void fly(){
         System.out.println("Fighter-Plane is fly");
     }
 
+    @Override
     public void land(){
         System.out.println("Fighter-Plane is land");
     }

@@ -1,13 +1,16 @@
-package conditions;
+package condition;
 import java.util.Scanner;
 
 public class Simplecalculator {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        double a = sc.nextDouble();
-        char op = sc.next().charAt(0);
-        double b = sc.nextDouble();
-        sc.close();
+        double a;
+        char op;
+        double b;
+        try (Scanner sc = new Scanner(System.in)) {
+            a = sc.nextDouble();
+            op = sc.next().charAt(0);
+            b = sc.nextDouble();
+        }
 
         // if (op == '+') System.out.println(a+b);
         // if (op == '-') System.out.println(a-b);
@@ -15,20 +18,14 @@ public class Simplecalculator {
         // if (op == '/') System.out.println(a/b);
 
         switch (op) {
-            case '+':
-                System.out.println(a+b);
-                break;
-            case '-':
-                System.out.println(a-b);
-                break;
-            case '*':
-                System.out.println(a*b);
-                break;
-            case '/':
-                System.out.println(a/b);
-                break;
-            default: System.out.println("Please enter valid Operator!");
+            case '+' -> System.out.println(a+b);
+            case '-' -> System.out.println(a-b);
+            case '*' -> System.out.println(a*b);
+            case '/' -> System.out.println(a/b);
+            default -> {
+                System.out.println("Please enter valid Operator!");
                 throw new AssertionError();
+            }
         }
     }
 }
