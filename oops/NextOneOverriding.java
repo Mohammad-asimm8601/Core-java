@@ -10,25 +10,31 @@ class Animal{
 }
 
 class Monkey extends Animal{
+    @Override
     public void eat(){
         System.out.println("Monkey is steals and eats");
     }
+    @Override
     public void sleep(){
         System.out.println("Monkey is sleeping");
     }
 }
 class Deer extends Animal{
+    @Override
     public void eat(){
         System.out.println("Deer is graze and eats");
     }
+    @Override
     public void sleep(){
         System.out.println("Deer is sleeping");
     }
 }
 class Lion extends Animal{
+    @Override
     public void eat(){
         System.out.println("Lion is hunts and eats");
     }
+    @Override
     public void sleep(){
         System.out.println("Lion is sleeping");
     }
