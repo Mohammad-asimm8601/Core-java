@@ -17,7 +17,7 @@ public class MethodOverloading {
     public static void main(String[] args) {
         Addition a = new Addition();
         a.add(10, 20);
-        a.add(5.2f, 20);
+        a.add(5.2f, 20.3f);
         a.add(2.33, 3.14);
     }
 }
