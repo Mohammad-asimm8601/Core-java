@@ -43,7 +43,7 @@ class checkingAccount{
 public class BankDemo {
     public static void main(String[] args) {   
         checkingAccount a = new checkingAccount(101);
-        System.out.println("Deposite 500");
+        System.out.println("Deposit 500");
         a.deposit(500);
 
         try {
