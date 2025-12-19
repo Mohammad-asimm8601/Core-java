@@ -76,5 +76,6 @@ public class StudentRegistrationForm extends Frame implements ActionListener {
         
     }
 }
+
     
 
